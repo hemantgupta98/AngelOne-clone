@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@media (max-width:1008px) {
+      .list{
+            display: none;
+      }
+}
+
+/* styles for input with font awesome icon */
+.input-with-icon{
+      position: relative;
+      display: inline-block;
+}
+.input-with-icon .input-icon{
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      font-size: 0.95rem;
+}
+.input-with-icon input{
+      padding-left: 2.5rem; /* space for the icon */
+}
+
+.content-1 {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color:transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+.content-image{
+   mix-blend-mode: exclusion;
+}
+
+#image{
+      mix-blend-mode: darken;
+}

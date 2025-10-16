@@ -1,0 +1,591 @@
+import React from "react";
+import "./All.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleRight,
+  faListUl,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
+
+import img1 from "../assets/Image/img1.webp";
+import img2 from "../assets/Image/img2.webp";
+
+/*import img3 from "../assets/Image/img3.webp";*/
+import img4 from "../assets/Image/img4.webp";
+/*import img5 from "../assets/Image/img5.webp";*/
+/*import img6 from "../assets/Image/img6.webp";*/
+/*import img7 from "../assets/Image/img7.webp";*/
+import img8 from "../assets/Image/img8.webp";
+/*import img9 from "../assets/Image/img9.webp";*/
+/*import img10 from "../assets/Image/img10.webp";*/
+/*import img11 from "../assets/Image/img11.webp";*/
+/*import img12 from "../assets/Image/img12.png";*/
+/*import img13 from "../assets/Image/img13.webp";*/
+/*import img14 from "../assets/Image/img14.webp";*/
+import img15 from "../assets/Image/img15.png";
+import img17 from "../assets/Image/img17.png";
+import img19 from "../assets/Image/img19.png";
+/*import logo from "../assets/Image/logo.png";*/
+
+const Login = () => {
+  return (
+    <>
+      <main>
+        <div className="login ">
+          <div className="login-section h-1500 w-full  bg-zinc-100">
+            {/*heading*/}
+            <div className="heading h-25  w-full flex bg-white gap-5 justify-center ">
+              <img src={img2} alt="logo" className=" relative h-25 w-50 " />
+              <div className="input-with-icon mt-5">
+                <FontAwesomeIcon
+                  icon={faSearch}
+                  className="input-icon text-zinc-400 pb-9"
+                />
+                <input
+                  type="text"
+                  placeholder=" Search Stocks,News,Reports..."
+                  title="text"
+                  className=" bg-white  w-100 h-11 border-2 border-zinc-300 rounded-sm pl-10"
+                />
+              </div>
+              <button
+                className="bg-blue-600 text-white text-xl h-11 w-60 font-semibold 
+               rounded-md mt-5 cursor-pointer"
+              >
+                Open Demate account
+              </button>
+              <button
+                className="text-blue-500 bg-white border-1 border-zinc-300
+               h-11 w-30 rounded-md mt-5  cursor-pointer"
+              >
+                Login
+              </button>
+            </div>
+
+            <div className="heading-last h-13 w-full flex  justify-center  bg-blue-100">
+              <div className="font  hidden">
+                <FontAwesomeIcon icon={faListUl} />
+              </div>
+
+              <ul className="list flex gap-10 text-xl pt-2 cursor-pointer font-extralight ">
+                <li>Trade & Invest</li>
+                <li>Mutual Funds & SIP</li>
+                <li>Learn</li>
+                <li>News</li>
+                <li>Products</li>
+                <li>Become a Partner</li>
+                <li>Pricing</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            {/*Login-1*/}
+            <div className="login-section-1 flex justify-center relative pt-30 gap-20 ">
+              <div className="div-1 h-100 w-150 bg-white  border-1 border-zinc-200 rounded-sm">
+                <h1 className="text-black font-bold text-3xl text-center pt-10">
+                  Your One-Stop Investment Platform
+                </h1>
+                <p className="text-zinc-400 font-light text-2xl text-center pt-3">
+                  A trusted partner with 25 years of experience
+                </p>
+              </div>
+              <div className="div-2">
+                <img src={img1} alt="img" className="h-80 w-110" />
+              </div>
+            </div>
+
+            {/*login-2 */}
+            <div className="login-section-2 h-120 w-full mt-10 bg-white">
+              <h1 className="text-zinc-600  text-5xl font-bold flex  justify-center pt-10">
+                {" "}
+                <span>
+                  <img src={img17} alt="" />
+                </span>{" "}
+                Transparent pricing. No hidden charges{" "}
+                <span>
+                  <img src={img17} alt="" />
+                </span>
+              </h1>
+              <div className="container mx-auto flex justify-center gap-10 pt-10">
+                <div className="content-1 border-2 text-center h-50 w-80 bg-pink-500 border-blue-400 rounded-md ">
+                  <img
+                    src={img17}
+                    alt="background"
+                    className="content-image h-full w-full  rounded-md"
+                  />
+                  <h1 className="image-text font-semibold ">
+                    <span className="text-white text-4xl  font-semibold">
+                      ₹
+                    </span>
+                    <span className="text-6xl font-semibold  text-white ">
+                      0
+                    </span>{" "}
+                    <br />
+                    Account Opening <br /> Charges
+                  </h1>
+                </div>
+                <div className="content-1 border-2 text-center h-50 w-80 bg-red-800 border-blue-400 rounded-md ">
+                  <img
+                    src={img17}
+                    alt="background"
+                    className="content-image h-full w-full  rounded-md"
+                  />
+                  <h1 className="image-text font-semibold ">
+                    <span className="text-white text-4xl  font-semibold">
+                      ₹
+                    </span>
+                    <span className="text-6xl font-semibold  text-white ">
+                      0
+                    </span>{" "}
+                    <br />
+                    Account Opening <br /> Charges
+                  </h1>
+                </div>
+                <div className="content-1 border-2 text-center h-50 w-80 bg-blur-500 border-blue-400 rounded-md ">
+                  <img
+                    src={img17}
+                    alt="background"
+                    className="content-image h-full w-full  rounded-md"
+                  />
+                  <h1 className="image-text font-semibold ">
+                    <span className="text-white text-4xl  font-semibold">
+                      ₹
+                    </span>
+                    <span className="text-6xl font-semibold  text-white ">
+                      0
+                    </span>{" "}
+                    <br />
+                    Account Opening <br /> Charges
+                  </h1>
+                </div>
+                <div className="content-1 border-2 text-center h-50 w-80 bg-zinc-400 border-blue-400 rounded-md ">
+                  <img
+                    src={img17}
+                    alt="background"
+                    className="content-image h-full w-full  rounded-md"
+                  />
+                  <h1 className="image-text font-semibold ">
+                    <span className="text-white text-4xl  font-semibold">
+                      ₹
+                    </span>
+                    <span className="text-6xl font-semibold  text-white ">
+                      0
+                    </span>{" "}
+                    <br />
+                    Account Opening <br /> Charges
+                  </h1>
+                </div>
+              </div>
+              <p className="text-zinc-500 text-sm pl-15">
+                *Brokerage will not exceed the SEBI prescribed limit
+              </p>
+              <h1 className="text-blue-700 font-semibold text-center pt-15 cursor-pointer">
+                VIEW PRICING <FontAwesomeIcon icon={faAngleRight} />
+              </h1>
+            </div>
+
+            {/*login-3*/}
+            <div className="login-section-3 h-170 flex justify-around pt-20">
+              <div className="container-1">
+                <img
+                  src={img4}
+                  alt="background"
+                  className=" h-120 w-150"
+                  id="image"
+                />
+              </div>
+              <div className="container-2">
+                <h1 className=" text-zinc-700 text-5xl font-bold ">
+                  SEAMLESS <br /> INVESTING
+                </h1>
+                <p className=" text-zinc-500 pt-5">
+                  Experience seamless investing with Angel One. Access the{" "}
+                  <br />
+                  industry's best tools and expert insights to achieve your{" "}
+                  <br />
+                  financial goals.
+                </p>
+
+                <div className="text-section pl-5 pt-8">
+                  <p className=" text-xl font-semibold text-zinc-700">
+                    Zero Commission on Mutual Fund Investments/SIPs
+                  </p>
+                  <p className=" text-zinc-500">
+                    Enjoy the compounding returns of mutual funds and SIPs, at
+                    no <br />
+                    additional costs.
+                  </p>
+
+                  <p className=" text-xl font-semibold text-zinc-700 pt-5">
+                    Portfolio Advisory
+                  </p>
+                  <p className=" text-zinc-500">
+                    Access ready-to-invest, well-researched portfolios built by{" "}
+                    <br />
+                    experts, empowering you to make informed investment <br />{" "}
+                    decisions.
+                  </p>
+
+                  <p className=" text-xl font-semibold text-zinc-700 pt-5">
+                    24/7 Order Placement
+                  </p>
+                  <p className=" text-zinc-500">
+                    Place buy/sell orders for stocks, bonds, and other assets at{" "}
+                    <br />
+                    any time, round the clock, so you never miss an opportunity
+                    in <br />
+                    the fast-paced world of finance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/*login-4 */}
+            <div className="login-section-4 flex justify-around h-170 w-full bg-white pt-30">
+              <div className="container-2">
+                <h1 className=" text-zinc-700 text-5xl font-bold ">
+                  BUILT FOR <br /> TRADERS
+                </h1>
+                <p className=" text-zinc-500 pt-5">
+                  Built by experts, Angel One is meticulously designed for{" "}
+                  <br />
+                  serious traders seeking power, precision, and <br />{" "}
+                  profitability.
+                </p>
+
+                <div className="text-section pl-5 pt-8">
+                  <p className=" text-xl font-semibold text-zinc-700">
+                    Swifter Charts
+                  </p>
+                  <p className=" text-zinc-500">
+                    Enjoy real-time charting powered by advanced indicators,{" "}
+                    <br />
+                    multi-chart layouts, direct trading from charts, etc.
+                  </p>
+
+                  <p className=" text-xl font-semibold text-zinc-700 pt-5">
+                    Fast Order Placement
+                  </p>
+                  <p className=" text-zinc-500">
+                    Execute trades with speed and precision, giving <br /> you
+                    the edge in dynamic markets
+                  </p>
+
+                  <p className=" text-xl font-semibold text-zinc-700 pt-5">
+                    Basket Orders
+                  </p>
+                  <p className=" text-zinc-500">
+                    Place multiple orders in a single transaction via <br />{" "}
+                    Basket! Seize all your trade opportunities at a <br /> fast
+                    speed
+                  </p>
+                </div>
+              </div>
+              <div className="container-1">
+                <img
+                  src={img8}
+                  alt="background"
+                  className=" h-120 w-150"
+                  id="image"
+                />
+              </div>
+            </div>
+
+            {/*login-5 */}
+            <div className="login-section-5 h-180 w-full bg-zinc-100 ">
+              <h1 className=" text-zinc-700 font-bold text-5xl text-center pt-20">
+                PICK YOUR PREFERD INVESTMENT
+              </h1>
+              <p className=" text-zinc-600 font-light text-xl text-center pt-3">
+                Discover Angel One's extensive array of investment options, from
+                stocks and bonds to mutual funds and more
+              </p>
+              <div className="containers flex pt-10 gap-15 justify-center">
+                <div className="container-1 h-45 w-80 border-1 border-zinc-300 rounded-md hover:border-blue-500 cursor-pointer">
+                  <p className=" text-black text-3xl font-semibold pl-5 pt-12">
+                    Stocks
+                  </p>
+                  <p className=" text-zinc-400 pl-5">
+                    Own a part of renowed <br /> companies and enjoy capital
+                    aperciation.
+                  </p>
+                </div>
+                <div className="container-1 h-45 w-80 border-1 border-zinc-300 rounded-md hover:border-blue-500 cursor-pointer">
+                  <p className=" text-black text-3xl font-semibold pl-5 pt-12">
+                    IPO
+                  </p>
+                  <p className=" text-zinc-400 pl-5">
+                    Secure part ownership in new <br /> ventures and seize high
+                    growth <br /> potential.
+                  </p>
+                </div>
+                <div className="container-1 h-45 w-80 border-1 border-zinc-300 rounded-md hover:border-blue-500 cursor-pointer">
+                  <p className=" text-black text-3xl font-semibold pl-5 pt-12">
+                    F&O
+                  </p>
+                  <p className=" text-zinc-400 pl-5">
+                    Navigate market volatility, <br /> manage risk and amplify
+                    returns with F&O trading.
+                  </p>
+                </div>
+              </div>
+              <div className="containers-2 flex pt-15 gap-15 justify-center">
+                <div className="container-1 h-45 w-80 border-1 border-zinc-300 rounded-md hover:border-blue-500 cursor-pointer">
+                  <p className=" text-black text-3xl font-semibold pl-5 pt-12">
+                    Mutual funds
+                  </p>
+                  <p className=" text-zinc-400 pl-5">
+                    Invest in professionally <br /> managed portfolios for
+                    steady <br /> growth.
+                  </p>
+                </div>
+                <div className="container-1 h-45 w-80 border-1 border-zinc-300 rounded-md hover:border-blue-500 cursor-pointer">
+                  <p className=" text-black text-3xl font-semibold pl-5 pt-12">
+                    Commodities
+                  </p>
+                  <p className=" text-zinc-400 pl-5">
+                    Trade in metals, gold, oil and <br /> more to hedge risk and
+                    enhance <br /> your Portfolio
+                  </p>
+                </div>
+                <div className="container-1 h-45 w-80 border-1 border-zinc-300 rounded-md hover:border-blue-500 cursor-pointer">
+                  <p className=" text-black text-3xl font-semibold pl-5 pt-12">
+                    US Stock
+                  </p>
+                  <p className=" text-zinc-400 pl-5">
+                    Seize global opportunities by <br /> investing in the
+                    world's largest <br /> economy.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/*login-6 */}
+            <div className="login-section-6 h-190 w-full bg-white flex justify-evenly pt-20 pl-20 ">
+              <div className="section-1 ">
+                <h1 className=" text-zinc-700 text-5xl font-bold ">
+                  LEARN TO EARN WITH <br /> ANGEL ONE
+                </h1>
+                <p className=" text-zinc-500 font-light pt-5 pb-5 text-xl">
+                  Master the art of investing and secure your financial future
+                  with Angel <br /> One's learning resources.
+                </p>
+                <div className=" h-30 w-120  bg-zinc-100 border-1 border-zinc-200 hover:border-blue-400 rounded-md flex p-5 mb-5 cursor-pointer">
+                  <div className="text">
+                    <p className="text-black font-semibold ">NEWS</p>
+                    <p className=" text-zinc-800 font-light">
+                      Stay informed with experts insights, market trends and{" "}
+                      investment blog section.
+                    </p>
+                  </div>
+                  <div className="icon p-6 ">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className=" text-zinc-500"
+                    />
+                  </div>
+                </div>
+                <div className=" h-30 w-120  bg-zinc-100 border-1 border-zinc-200 hover:border-blue-400 rounded-md flex p-5 mb-5 cursor-pointer">
+                  <div className="text">
+                    <p className="text-black font-semibold ">
+                      Knowledge Center
+                    </p>
+                    <p className=" text-zinc-800 font-light">
+                      Unlock our comprehensive hub of educational resources for
+                      confident trading and investing.
+                    </p>
+                  </div>
+                  <div className="icon p-6 ">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className=" text-zinc-500"
+                    />
+                  </div>
+                </div>
+                <div className=" h-30 w-120  bg-zinc-100 border-1 border-zinc-200 hover:border-blue-400 rounded-md flex p-5 cursor-pointer">
+                  <div className="text">
+                    <p className="text-black font-semibold ">Smart Money</p>
+                    <p className=" text-zinc-800 font-light">
+                      Learn smarter ways to grow wealth with personalised
+                      investment and trading courses.
+                    </p>
+                  </div>
+                  <div className="icon p-6 ">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className=" text-zinc-500"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="section-2 pt-40">
+                <img src={img15} alt="" className=" w-150" />
+              </div>
+            </div>
+
+            {/*login-7 */}
+            <div className="login-section-7 h-110 w-full pt-15 pl-40 pr-40">
+              <div className="section-container h-80 w-full bg-white rounded-md border-1 border-zinc-200 flex justify-between pt-5">
+                <div className="text p-15">
+                  <h1 className=" text-black font-semibold text-3xl">
+                    Calculate Brokerage & Margin easily
+                  </h1>
+                  <div className="button p-5 pt-10 flex gap-10">
+                    <button
+                      className="h-13 w-60 bg-blue-50 rounded-4xl text-left 
+                    pl-3 text-xl  text-zinc-600 border-1 border-zinc-200 hover:border-blue-400 cursor-pointer"
+                    >
+                      SIP calculator{" "}
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className=" pl-15 text-zinc-300"
+                      />
+                    </button>
+                    <button
+                      className="h-13 w-60 bg-blue-50 rounded-4xl text-left 
+                     pl-3  text-xl  text-zinc-600 border-1 border-zinc-200 hover:border-blue-400 cursor-pointer"
+                    >
+                      Brokerage calculator{" "}
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className="pl-2 text-zinc-300"
+                      />
+                    </button>
+                    <button
+                      className="h-13 w-60 bg-blue-50 rounded-4xl text-left 
+                     pl-3 text-xl   text-zinc-600 border-1 border-zinc-200 hover:border-blue-400 cursor-pointer"
+                    >
+                      Margin calculator{" "}
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className=" pl-8 text-zinc-300"
+                      />
+                    </button>
+                  </div>
+                  <p className="text-blue-700 text-md font-semibold pt-5 cursor-pointer">
+                    EXPLORE CALCULATORES <FontAwesomeIcon icon={faAngleRight} />
+                  </p>
+                </div>
+                <div className="img">
+                  <img src={img19} alt="calculator" className=" h-60" />
+                </div>
+              </div>
+            </div>
+
+            {/*login-8 */}
+            <div className="login-section-8 h-290 w-full bg-white ">
+              <p className=" text-black font-semibold  text-2xl text-center pt-10">
+                Top 20 Stocks
+              </p>
+              {/*columns */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pl-40 pr-40 pt-10 text-center text-blue-600 font-semibold  ">
+                <div className=" border-1 border-zinc-400 rounded-tl-2xl hover:border-blue-500 pt-12 h-30 ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    IRFA share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Suzlon share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    IREDA share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 rounded-tr-2xl h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Tata Motors share bg price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Yes Bank share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    HDFC Bank share <br /> price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    NHPC share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    RVNL share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    SBI share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Tata Power share br price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Tata Steel share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Adani Power share <br /> price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    PNB share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Zomato share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12  h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    BEL share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12  h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Reliancce share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30 rounded-bl-2xl ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Infosys share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    ITC share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12  h-30  ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    Jio Finance share price
+                  </span>
+                </div>
+                <div className="border-1 border-zinc-400 hover:border-blue-600 pt-12 h-30 rounded-br-2xl ">
+                  <span className="cursor-pointer hover:text-blue-900">
+                    LIC share price
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Login;
