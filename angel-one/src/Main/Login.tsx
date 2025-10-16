@@ -4,8 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
   faListUl,
+  faPhone,
   faSearch,
+  faSms,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import img1 from "../assets/Image/img1.webp";
 import img2 from "../assets/Image/img2.webp";
@@ -19,7 +27,7 @@ import img8 from "../assets/Image/img8.webp";
 /*import img9 from "../assets/Image/img9.webp";*/
 import img10 from "../assets/Image/img10.webp";
 import img11 from "../assets/Image/img11.webp";
-/*import img12 from "../assets/Image/img12.png";*/
+import img12 from "../assets/Image/img12.png";
 import img13 from "../assets/Image/img13.webp";
 import img14 from "../assets/Image/img14.webp";
 import img15 from "../assets/Image/img15.png";
@@ -652,7 +660,253 @@ const Login = () => {
               </div>
             </div>
             {/*footer */}
-            <div className="footer"></div>
+            <div className="footer h-1000 w-full bg-gray-800">
+              {/*footer-section-1 */}
+              <div className="footer-heading p-30 text-white">
+                <img src={img12} alt="logo" className=" h-25 w-60" />
+
+                <p className=" text-2xl font-semibold pt-10">ABOUT US</p>
+                <p className=" pt-5 text-white font-extralight">
+                  Trusted by over 3Cr+ clients, Angel One is one of India’s
+                  leading retail full-service broking houses. We offer a wide
+                  range of innovative services, including online trading and
+                  investing, advisory, margin trading facility, algorithmic
+                  trading, smart orders, etc. Angel One App is a powerhouse of
+                  cutting-edge tools such as basket orders, GTT orders,
+                  SmartAPI, advanced charts and others that help you navigate
+                  capital markets like a pro.
+                </p>
+                <hr className=" h-0 bg-white w-full" />
+
+                <div className="footer-section-1 p-10 flex gap-30">
+                  <div className="content-1">
+                    <p className=" font-semibold pb-5">COMPANY OVERVIEW</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Open Demat Account</li>
+                      <li>Brokerage & Other Charges</li>
+                      <li>Contact Us</li>
+                      <li>About Us</li>
+                      <li>In the Media</li>
+                      <li>Investor Relations</li>
+                      <li>Webinars</li>
+                      <li>Careers</li>
+                    </ul>
+                  </div>
+                  <div className="content-2">
+                    <p className=" font-semibold pb-5">INVESTMENT OPTIONS</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Stocks</li>
+                      <li>Mutual Funds</li>
+                      <li>SIP with 100 Rupees</li>
+                      <li>NFO</li>
+                      <li>ETF</li>
+                      <li>Upcoming IPO</li>
+                      <li>Futures and Options</li>
+                      <li>US Stocks</li>
+                      <li>US ETF</li>
+                      <li>Currencies</li>
+                      <li>Commodity</li>
+                      <li>NCD</li>
+                      <li>Corporate Bonds</li>
+                      <li>Tax Free Bonds</li>
+                      <li>54EC bonds</li>
+                      <li>Sovereign Gold Bond</li>
+                      <li>Tax Saving Bonds</li>
+                    </ul>
+                  </div>
+                  <div className="content-3">
+                    <p className=" font-semibold pb-5">CALCULATORS</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Brokerage Calculator</li>
+                      <li>Margin Calculator</li>
+                      <li>SIP Calculator</li>
+                      <li>Lumpsum Calculator</li>
+                      <li>CAGR Calculator</li>
+                      <li>Dividend Yield Calculator</li>
+                      <li>Future Value Calculator</li>
+                      <li>Compound Interest Rate Calculator</li>
+                      <li>FD Calculator</li>
+                      <li>RD Calculator</li>
+                      <li>Present Value Calculator</li>
+                      <li>EBITDA Calculator</li>
+                      <li>Mutual Fund Returns Calculator</li>
+                      <li>EMI Calculator</li>
+                      <li>PPF Calculator</li>
+                    </ul>
+                  </div>
+                  <div className="content-4">
+                    <p className=" font-semibold pb-5">KNOWLEDGE CENTER</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Mutual Funds</li>
+                      <li>Demat Account</li>
+                      <li>Trading Account</li>
+                      <li>Online Share Trading</li>
+                      <li>Intraday Trading</li>
+                      <li>Share Market</li>
+                      <li>IPO</li>
+                      <li>Derivatives</li>
+                      <li>Commodities Trading</li>
+                      <li>Futures and Options Trading</li>
+                      <li>Income tax</li>
+                      <li>Authorised Person</li>
+                      <li>Analyst Corner</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr className="  bg-white w-full" />
+                <div className="footer-section-2 p-10 flex gap-30">
+                  <div className="content-1">
+                    <p className=" font-semibold pb-5">LEARN TO EARN</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Knowledge Center</li>
+                      <li>Smart Money</li>
+                      <li>News</li>
+                      <li>Fundamental Research</li>
+                      <li>Technical Research</li>
+                      <li>Company Reports</li>
+                      <li>Angel One - Community</li>
+                      <li>Careers</li>
+                      <li>Be Vigilant - Jagruk Tejabhai</li>
+                    </ul>
+                  </div>
+                  <div className="content-2">
+                    <p className=" font-semibold pb-5">BECOME A PARTNER</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Become Business Partner</li>
+                      <li>Become DRA</li>
+                      <li>Who is an Authorised person?</li>
+                      <li>Benefits of being an Authorised Person</li>
+                      <li>Authorised Person Income</li>
+                      <li>Eligibility & Documents Required</li>
+                      <li>Authorised Person Business Model</li>
+                      <li>Authorised Person App & NXT platform</li>
+                      <li>Authorised Person Details</li>
+                      <li>Authorised Person Locator</li>
+                    </ul>
+                  </div>
+                  <div className="content-3">
+                    <p className=" font-semibold pb-5">MARKET OUTLOOK</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>Share Market</li>
+                      <li>Announcements</li>
+                      <li>Share Market Holidays 2025</li>
+                      <li>Share Market Glossary</li>
+                      <li>52-week High</li>
+                      <li>52-week Low</li>
+                      <li>Top Gainers</li>
+                      <li>Top Losers</li>
+                    </ul>
+                  </div>
+                  <div className="content-4">
+                    <p className=" font-semibold pb-5">UPCOMING IPO</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>LG Electronics IPO</li>
+                      <li>Groww IPO</li>
+                      <li>Reliance JIO IPO</li>
+                      <li>Lenskart Solutions Ltd. IPO</li>
+                      <li>Oyo IPO</li>
+                      <li>Boat IPO</li>
+                      <li>Zepto IPO</li>
+                      <li>PhonePe IPO</li>
+                      <li>PhysicsWallah Ltd. IPO</li>
+                      <li>Snapdeal IPO</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr className=" w-full bg-white" />
+                <div className="footer-section-3 p-10  flex gap-30">
+                  <div className="content-1">
+                    <p className=" font-semibold pb-5">TOP STOCKS TO INVEST</p>
+                    <ul className="  font-extralight cursor-pointer">
+                      <li>IRFC share price</li>
+                      <li>Suzlon share price</li>
+                      <li>IREDA share price</li>
+                      <li>Tata Motors share price</li>
+                      <li>Yes Bank share price</li>
+                    </ul>
+                  </div>
+                  <div className="content-2">
+                    <ul className="  font-extralight cursor-pointer pt-10">
+                      <li>HDFC Bank share price</li>
+                      <li>NHPC share price</li>
+                      <li>RVNL share price</li>
+                      <li>SBI share price</li>
+                      <li>Tata Power share price</li>
+                    </ul>
+                  </div>
+                  <div className="content-3">
+                    <ul className="  font-extralight cursor-pointer pt-10">
+                      <li>Adani Power share price</li>
+                      <li>PNB share price</li>
+                      <li>Zomato share price</li>
+                      <li>BEL share price</li>
+                      <li>Reliance share price</li>
+                    </ul>
+                  </div>
+                  <div className="content-4">
+                    <ul className="  font-extralight cursor-pointer pt-10">
+                      <li>Infosys share price</li>
+                      <li>ITC share price</li>
+                      <li>Jio Finance share price</li>
+                      <li>LIC share price</li>
+                      <li>Tata Steel share price</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr className=" h-0 bg-white w-full" />
+                <div className="icons pt-10 flex gap-50 ">
+                  <div className="flex gap-10">
+                    <p className=" text-white font-semibold ">
+                      CUSTOMER SUPPORT :
+                    </p>
+                    <p className=" font-extralight text-sm">
+                      <span>
+                        <FontAwesomeIcon icon={faPhone} />
+                      </span>
+                      18001020
+                    </p>
+                    <p className="  font-extralight text-sm">
+                      <span>
+                        <FontAwesomeIcon icon={faSms} />
+                      </span>{" "}
+                      Support FAQs
+                    </p>
+                  </div>
+                  <div className=" flex gap-5">
+                    <p className=" text-white font-semibold ">FOLLOW US :</p>
+                    <a href="https://github.com/hemantgupta98">
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        className=" bg-black rounded-4xl cursor-pointer"
+                      />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/hemant-gupta-0518b1251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appD">
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        className="  rounded-4xl  text-blue-600  cursor-pointer"
+                      />
+                    </a>
+
+                    <a href="https://www.instagram.com/hemant_gupta_75?igsh=MXJtdHRmczdzaHBqdw==&utm_source=ig_contact_invite">
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        className="  rounded-4xl  text-pink-600 cursor-pointer"
+                      />
+                    </a>
+
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      className=" rounded-4xl cursor-pointer"
+                    />
+                  </div>
+                </div>
+                <hr className=" h-0 bg-white w-full mt-10" />
+              </div>
+            </div>
           </div>
         </div>
       </main>
