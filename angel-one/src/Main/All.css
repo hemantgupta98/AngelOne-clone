@@ -46,3 +46,19 @@
 #image{
       mix-blend-mode: darken;
 }
+.inp::placeholder{
+   color:  rgb(208, 200, 200);
+   font-weight: 600;
+   font-size: 1rem;
+}
+/* Hide number input arrows */
+.inp::-webkit-outer-spin-button,
+.inp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.inp[type='number'] {
+  -moz-appearance: textfield;
+}

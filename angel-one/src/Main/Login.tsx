@@ -10,20 +10,21 @@ import {
 import img1 from "../assets/Image/img1.webp";
 import img2 from "../assets/Image/img2.webp";
 
-/*import img3 from "../assets/Image/img3.webp";*/
+import img3 from "../assets/Image/img3.webp";
 import img4 from "../assets/Image/img4.webp";
 /*import img5 from "../assets/Image/img5.webp";*/
 /*import img6 from "../assets/Image/img6.webp";*/
 /*import img7 from "../assets/Image/img7.webp";*/
 import img8 from "../assets/Image/img8.webp";
 /*import img9 from "../assets/Image/img9.webp";*/
-/*import img10 from "../assets/Image/img10.webp";*/
-/*import img11 from "../assets/Image/img11.webp";*/
+import img10 from "../assets/Image/img10.webp";
+import img11 from "../assets/Image/img11.webp";
 /*import img12 from "../assets/Image/img12.png";*/
-/*import img13 from "../assets/Image/img13.webp";*/
-/*import img14 from "../assets/Image/img14.webp";*/
+import img13 from "../assets/Image/img13.webp";
+import img14 from "../assets/Image/img14.webp";
 import img15 from "../assets/Image/img15.png";
 import img17 from "../assets/Image/img17.png";
+import img18 from "../assets/Image/img18.png";
 import img19 from "../assets/Image/img19.png";
 /*import logo from "../assets/Image/logo.png";*/
 
@@ -473,7 +474,7 @@ const Login = () => {
             </div>
 
             {/*login-8 */}
-            <div className="login-section-8 h-290 w-full bg-white ">
+            <div className="login-section-8 h-550 w-full bg-white ">
               <p className=" text-black font-semibold  text-2xl text-center pt-10">
                 Top 20 Stocks
               </p>
@@ -580,7 +581,78 @@ const Login = () => {
                   </span>
                 </div>
               </div>
+
+              <div className="bottom-text   ">
+                <ul className=" flex justify-center pt-20 text-5xl font-semibold">
+                  <li>
+                    <img src={img17} alt="logo" className=" pt-5" />
+                  </li>
+                  <li>Angel One for every One</li>
+                  <li>
+                    <img src={img17} alt="logo" className=" pt-5" />
+                  </li>
+                </ul>
+                <p className=" text-center text-3xl font-bold">
+                  #AppforSmartInvesting
+                </p>
+                <img src={img10} alt="logo" className=" w-full" />
+                <p className=" text-blue-600 font-semibold text-xl text-center cursor-pointer">
+                  Read more{" "}
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className=" text-blue-600"
+                  />
+                </p>
+              </div>
+              <img src={img18} alt="background" className=" pt-20" />
+
+              <div className="login-last h-100 w-300 rounded-2xl bg-blue-500 ml-40 mr-40 mt-20 flex">
+                <div className="img-section flex p-20 gap-10">
+                  <img src={img11} alt="logo" className=" h-80 w-60 " />
+                  <p className="text-yellow-500 text-3xl font-bold  ">
+                    4.4 Cr+ <br /> DOWNLOADS
+                  </p>
+                </div>
+                <div className="input-section p-15">
+                  <p className=" text-4xl font-bold text-white">
+                    Enjoy ₹0 Account Opening Charges
+                  </p>
+                  <div className="button bg-white h-15 w-100 flex justify-between pl-5 rounded-md mt-10">
+                    <div>
+                      <input
+                        type="number"
+                        placeholder=" Enter your number"
+                        className="inp h-14 w-35 outline-none"
+                        onInput={(e) => {
+                          if (e.target.value.length > 10) {
+                            e.target.value = e.target.value.slice(0, 10);
+                          }
+                        }}
+                      />
+                      <p className=" hidden ">Invalid number</p>
+                    </div>
+                    <div>
+                      <button className=" bg-blue-600 text-white font-semibold rounded-md h-10 w-35 mt-2 mr-2 cursor-pointer">
+                        Get started
+                      </button>
+                    </div>
+                  </div>
+                  <div className="QR flex gap-5 mt-5 ">
+                    <img src={img3} alt="" className=" h-25 rounded-xl" />
+                    <div className="h-10 w-30 ">
+                      <img src={img13} alt="logo" className=" cursor-pointer" />
+                      <img
+                        src={img14}
+                        alt="logo"
+                        className=" mt-4 cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            {/*footer */}
+            <div className="footer"></div>
           </div>
         </div>
       </main>
