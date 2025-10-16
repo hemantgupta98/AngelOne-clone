@@ -660,7 +660,7 @@ const Login = () => {
               </div>
             </div>
             {/*footer */}
-            <div className="footer h-1000 w-full bg-gray-800">
+            <div className="footer h-790 w-full bg-gray-800">
               {/*footer-section-1 */}
               <div className="footer-heading p-30 text-white">
                 <img src={img12} alt="logo" className=" h-25 w-60" />
@@ -862,13 +862,13 @@ const Login = () => {
                     <p className=" text-white font-semibold ">
                       CUSTOMER SUPPORT :
                     </p>
-                    <p className=" font-extralight text-sm">
+                    <p className=" font-extralight text-sm cursor-pointer">
                       <span>
                         <FontAwesomeIcon icon={faPhone} />
                       </span>
                       18001020
                     </p>
-                    <p className="  font-extralight text-sm">
+                    <p className="  font-extralight text-sm cursor-pointer">
                       <span>
                         <FontAwesomeIcon icon={faSms} />
                       </span>{" "}
@@ -905,6 +905,203 @@ const Login = () => {
                   </div>
                 </div>
                 <hr className=" h-0 bg-white w-full mt-10" />
+                <div className="last-footer pt-5">
+                  <div className=" text-white flex gap-10">
+                    <p className="  font-semibold">GROUP WEBSITES :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      Angel One AMC | Ionic Wealth
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">OTHER LINKS :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      Angel One APP | Angel One Trade | Angel SpeedPro | Margin
+                      Trading | Facility Smart API
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">PARTNERS :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      Sensibull | Smallcase | Streak | Vested | TradingView
+                    </p>
+                  </div>
+                </div>
+                <hr className=" h-0 bg-white w-full mt-5" />
+                <div className="last-1 pt-5">
+                  <div className=" text-white flex gap-10">
+                    <p className="  font-semibold">INDICES :</p>
+                    <p className=" text-sm font-extralight space-y-2.5 cursor-pointer">
+                      Nifty 50 | Nifty Bank | Nifty | Financial Services | BSE
+                      Small Cap | Nifty Next 50 | Nifty Midcap 100 | BSE Sensex
+                      | India Vix | Gift Nifty
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">Futures :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      Nifty Futures | Nifty Bank Futures | Midcap Nifty Futures
+                      | Reliance Futures | BSE Futures
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">Options :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      Nifty Option chain | Nifty Bank Option chain | Midcap
+                      Nifty Option chain | Reliance Option chain | BSE Option
+                      chain
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">Gold Rates :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      Gold Rate Today in Mumbai | Gold Rate Today in Delhi |
+                      Gold Rate Today in Chennai | Gold Rate Today in Hyderabad
+                      | Gold Rate Today in Bangalore
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">Mutual Fund AMCs :</p>
+                    <p className=" text-sm font-ex tralight cursor-pointer">
+                      Angel One Mutual Fund | SBI Mutual Funds | Axis Mutual
+                      Funds | HDFC Mutual Funds | ICICI Prudential Mutual Funds
+                      | Nippon India Mutual Funds
+                    </p>
+                  </div>
+                  <div className=" text-white flex gap-10 pt-5">
+                    <p className="  font-semibold">MUTUAL FUNDS CATEGORIES :</p>
+                    <p className=" text-sm font-extralight cursor-pointer">
+                      ELSS Funds | Liquid Funds | Small Cap Funds | Arbitrage
+                      Funds | Gilt Funds | Mid Cap Funds | Multi Cap Funds |
+                      Large Cap Funds
+                    </p>
+                  </div>
+                </div>
+                <hr className=" h-0 bg-white w-full mt-5" />
+                <div className="last-text pt-10">
+                  <p className=" text-white font-semibold">
+                    ATTENTION INVESTORS
+                  </p>
+                  <p className=" text-sm font-extralight ">
+                    Stock Brokers can accept securities as margin from clients
+                    only by way of pledge in the depository system w.e.f.
+                    September 1, 2020.
+                  </p>
+                  <p className=" text-sm font-extralight pt-5">
+                    1. Update your mobile number & email Id with your stock
+                    broker/depository participant and receive OTP directly from
+                    depository on your email id and/or mobile number to create
+                    pledge.
+                  </p>
+                  <p className=" text-sm font-extralight pt-5">
+                    2. Pay 20% or "var + elm" whichever is higher as upfront
+                    margin of the transaction value to trade in cash market
+                    segment.
+                  </p>
+                  <p className=" text-sm font-extralight text-white pt-5">
+                    3. Investors may please refer to the Exchange's Frequently
+                    Asked Questions (FAQs) issued vide circular reference
+                    NSE/INSP/45191 dated July 31, 2020 and NSE/INSP/45534 dated
+                    August 31, 2020 and other guidelines issued from time to
+                    time in this regard.
+                  </p>
+                  <p className=" text-sm font-extralight text-white pt-5">
+                    4. Check your Securities /MF/ Bonds in the consolidated
+                    account statement issued by NSDL/CDSL every month.
+                  </p>
+
+                  <p className=" text-sm font-extralight text-white pt-5">
+                    Prevent Unauthorised transactions in your Trading/Demat
+                    Account. Update your mobile numbers/email IDs with your
+                    stock brokers/Depository Participant. Receive
+                    alerts/information of your transaction/all debit and other
+                    important transactions in your Trading/ Demat Account
+                    directly from Exchange/CDSL at the end of the day. Issued in
+                    the interest of investors. KYC is one time exercise while
+                    dealing in securities markets - once KYC is done through a
+                    SEBI registered intermediary (broker, DP, Mutual Fund etc.),
+                    you need not undergo the same process again when you
+                    approach another intermediary. <br /> No need to issue
+                    cheques by investors while subscribing to IPO. Just write
+                    the bank account number and sign in the application form to
+                    authorise your bank to make payment in case of allotment. No
+                    worries for refund as the money remains in investor's
+                    account. <br />
+                    We understand that certain investment advisors may be
+                    approaching members of the public including our clients,
+                    representing that they are our partners, or representing
+                    that their investment advice is based on our research.
+                    Please note that we have not engaged any third parties to
+                    render any investment advisory services on our behalf. We do
+                    not share our research reports or our clients’ personal or
+                    financial data with any third parties and have not
+                    authorized any such person to represent us in any manner.
+                    Persons making investments on the basis of such advice may
+                    lose all or a part of their investments along with the fee
+                    paid to such unscrupulous persons. Please be cautious about
+                    any phone call that you may receive from persons
+                    representing to be such investment advisors, or a part of
+                    research firm offering advice on securities. Do not make
+                    payments through e-mail links, WhatsApp or SMS. Please do
+                    not share your personal or financial information with any
+                    person without proper verification. Always trade through a
+                    registered broker. <br /> Issued in public interest by Angel
+                    One Limited, having its registered office at 601, 6th Floor,
+                    Ackruti Star, Central Road, MIDC, Andheri East, Mumbai -
+                    400093, Telephone: +91 22 4000 3600, <br /> Fax: + 91 22
+                    2835 8811.
+                  </p>
+
+                  <p className=" text-white font-semibold pt-15">DISCALIMER</p>
+                  <p className=" text-sm font-extralight text-white pt-5">
+                    Investments in securities market are subject to market risk,
+                    read all the related documents carefully before investing.{" "}
+                    <br />
+                    We collect, retain, and use your contact information for
+                    legitimate business purposes only, to contact you and to
+                    provide you information & latest updates regarding our
+                    products & services. We do not sell or rent your contact
+                    information to third parties. <br /> Please note that by
+                    submitting the above-mentioned details, you are authorizing
+                    us to Call/SMS you even though you may be registered under
+                    DND. We shall Call/SMS you for a period of 12 months. <br />{" "}
+                    Angel One Limited, Registered Office: 601, 6th Floor,
+                    Ackruti Star, Central Road, MIDC, Andheri East, Mumbai -
+                    400093. Tel: 18001020. CIN: L67120MH1996PLC101709, SEBI
+                    Regn. No.: INZ000161534-BSE Cash/F&O/CD (Member ID: 612),
+                    NSE Cash/F&O/CD (Member ID: 12798), MSEI Cash/F&O/CD (Member
+                    ID: 10500), MCX Commodity Derivatives (Member ID: 12685) and
+                    NCDEX Commodity Derivatives (Member ID: 220), CDSL Regn.
+                    No.: IN-DP-384-2018, PMS Regn. No.: INP000001546, Research
+                    Analyst SEBI Regn. No.: INH000000164, Investment Adviser
+                    SEBI Regn. No.: INA000008172, AMFI-registered Mutual Fund
+                    Distributor - ARN-77404, (Date of initial Registration
+                    -03-12-2009, Current validity of ARN- 02-12-2026). PFRDA
+                    Registration No.19092018.Compliance officer: Mr. Bineet Jha,
+                    Tel: 18001020 Email: compliance@angelbroking.com. Only for
+                    National Pension Scheme (NPS) related grievances please mail
+                    to NPSgrievances@angelbroking.com Grievance Redressal
+                    Officer (GRO) - Mr Reuel Kunder, Mo. No : 8655719858 <br />{" "}
+                    For issues related to cyber attacks, call us at
+                    +91-8045070444 or email us at
+                    cybersecurityissues@angelone.in <br /> For any Law
+                    Enforcement Agency notices, please reach out / send notices
+                    to legal@angelone.in <br /> Brokerage will not exceed the
+                    SEBI prescribed limit.
+                  </p>
+                </div>
+                <hr className=" h-0 bg-white w-full mt-5" />
+                <p className=" text-sm font-extralight text-white pt-5 cursor-pointer">
+                  Research Disclaimer | Regulatory Content | Dos and Don'ts to
+                  Safe Investing | Scores | Dos and Don'ts While Dealing With
+                  Investment Advisor | FAQs | T&C Apply | Privacy Policy |
+                  Digital Lending - Privacy Policy | AngelOne Personal Loans |
+                  Investor Charter | Advisory for Investors | NCL Collateral|
+                  CDSL eVoting | NSDL eVoting |ODR Portal | Risk Disclosure on
+                  Derivatives | Caution for Investors
+                </p>
+                <p className=" text-sm font-extralight text-white pt-5">
+                  Copyright - All rights reserved
+                </p>
               </div>
             </div>
           </div>
