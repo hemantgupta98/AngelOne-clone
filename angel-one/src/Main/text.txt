@@ -1,0 +1,138 @@
+type Props = {
+  images: string[];
+  height?: number | string;
+  className?: string;
+  delay?: number;
+  duration?: number;
+  pauseOnHover?: boolean;
+  altPrefix?: string;
+};
+
+
+images,
+  height = 100,
+  className = "",
+  delay = 5,
+  duration = 30,
+  pauseOnHover = false,
+  altPrefix = "slide",
+}: Props) {
+  if (!images || images.length === 0) return null;
+
+  const heightCss = typeof height === "number" ? `${height}px` : height;
+
+  const uid = Math.random().toString(36).slice(2, 8);
+  const trackClass = `ihs-track-${uid}`;
+  const wrapperClass = `ihs-wrapper-${uid}`;
+
+  const doubled = [...images, ...images];
+
+
+
+  <div
+        className={`w-full overflow-hidden relative ${className} ${wrapperClass}`}
+        style={{ height: heightCss }}
+        aria-hidden={false}
+      >
+        <div className={`flex items-center whitespace-nowrap ${trackClass}`}>
+          {doubled.map((src, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 p-2"
+              style={{ height: heightCss }}
+            >
+              <img
+                src={src}
+                alt={`${altPrefix}-${i % images.length}`}
+                className="h-full object-cover rounded-lg shadow-sm"
+                style={{ display: "block" }}
+              />
+            </div>
+          ))}
+        </div>
+
+        <style>{`
+        /* wrapper ensures the track's visible area is clipped */
+        .${wrapperClass} { --ihs-duration: ${duration}s ${delay}s; }
+
+        /* the track contains two back-to-back copies of the slides */
+        .${trackClass} {
+          display: flex;
+          align-items: center;
+          /* prevent wrapping so the items stay in a single row */
+          white-space: nowrap;
+          /* Make track width "auto" so it matches content (two copies)
+             and animating -50% will move exactly one copy's width */
+          width: max-content;
+          /* animation moves the track left by 50% of its own width */
+          animation: ihs-scroll-${uid} var(--ihs-duration) linear infinite;
+          will-change: transform;
+        }
+
+        /* Pause-on-hover behaviour */
+        ${
+          pauseOnHover
+            ? `.${wrapperClass}:hover .${trackClass} { animation-play-state: paused; }`
+            : ""
+        }
+
+        @keyframes ihs-scroll-${uid} {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+
+        /* optional: make images slightly responsive by ensuring their height fits */
+        .${trackClass} > div { height: 100%; }
+        .${trackClass} img { height: 100%; width: auto; }
+
+        /* small accessibility improvement: reduce motion if user prefers reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+          .${trackClass} { animation: none; }
+        }
+      `}</style>
+      </div>
+
+
+
+
+
+
+      import { useForm, SubmitHandler } from "react-hook-form"
+
+
+type Inputs = {
+  example: string
+  exampleRequired: string
+}
+
+
+export default function App() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<Inputs>()
+  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+
+
+  console.log(watch("example")) // watch input value by passing the name of it
+
+
+  return (
+    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
+    <form onSubmit={handleSubmit(onSubmit)}>
+      {/* register your input into the hook by invoking the "register" function */}
+      <input defaultValue="test" {...register("example")} />
+
+
+      {/* include validation with required or other standard HTML validation rules */}
+      <input {...register("exampleRequired", { required: true })} />
+      {/* errors will return when field validation fails  */}
+      {errors.exampleRequired && <span>This field is required</span>}
+
+
+      <input type="submit" />
+    </form>
+  )
+}

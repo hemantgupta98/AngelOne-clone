@@ -16,6 +16,13 @@
           "-moz-appearance"
         ]
       }
-    ]
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-valid-attr-value": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
