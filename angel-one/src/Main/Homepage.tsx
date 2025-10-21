@@ -22,12 +22,24 @@ import api from "../assets/Image/api.svg";
 import sensibull from "../assets/Image/sensibull.svg";
 import sip from "../assets/Image/sip.svg";
 import alert from "../assets/Image/alert.svg";
+import btn1 from "../assets/Image/btn1.svg";
+import btn2 from "../assets/Image/btn2.svg";
+import btn3 from "../assets/Image/btn3.svg";
+import small from "../assets/Image/small.svg";
+import vested from "../assets/Image/vested.svg";
+import instagram from "../assets/Image/instagram.svg";
+import facebook from "../assets/Image/facebook.svg";
+import linkdin from "../assets/Image/linkedin.svg";
+import youtube from "../assets/Image/youtube.svg";
+import twiter from "../assets/Image/twitter.svg";
 
-const HomePage = () => {
+/*import r1 from "../assets/Image/r1.mp4";*/
+
+const HomePage: React.FC = () => {
   return (
     <>
       <main>
-        <div className=" bg-blue-50 h-700 w-full ">
+        <div className=" bg-blue-50 h-770 w-full ">
           <div className=" flex justify-between bg-white w-full h-10">
             <div className=" my-2 mx-2">
               <img src={logo} alt="" />
@@ -358,7 +370,240 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="content-8 bg-white w-full h-140 my-2 rounded-xl"></div>
+          <div className="content-8 bg-white w-full h-125 my-2 px-5 py-5 rounded-xl">
+            <h1 className="text-black font-semibold text-sm">
+              Learn with Smart Money by Angel One
+            </h1>
+            <div className="space-x-3  my-3 mx-2">
+              <button className="text-xs text-black font-light h-5 w-22 bg-zinc-100 rounded-sm border border-zinc-200 cursor-pointer">
+                Stock Market
+              </button>
+              <button className="text-xs text-black font-light h-5 w-22 bg-zinc-100 rounded-sm border border-zinc-200 cursor-pointer">
+                Investment
+              </button>
+              <button className="text-xs text-black font-light h-5 w-22 bg-zinc-100 rounded-sm border border-zinc-200 cursor-pointer">
+                Trading
+              </button>
+              <button className="text-xs text-black font-light h-5 w-22 bg-zinc-100 rounded-sm border border-zinc-200 cursor-pointer">
+                Mutual Fund
+              </button>
+              <button className="text-xs text-black font-light h-5 w-22 bg-zinc-100 rounded-sm border border-zinc-200 cursor-pointer">
+                Personal Finance
+              </button>
+              <button className="text-xs text-black font-light h-5 w-32 bg-zinc-100 rounded-sm border border-zinc-200 cursor-pointer">
+                Alternative Investment
+              </button>
+            </div>
+
+            <div className="flex my-5 mx-2 gap-10 ">
+              <div className="h-80 w-120 cursor-pointer">
+                <img
+                  src={btn1}
+                  alt="background"
+                  className="rounded-md w-full h-fit"
+                />
+                <button className="text-xs text-black font-light h-5 w-22 bg-green-50 rounded-sm border border-zinc-200 my-3">
+                  Intermediate
+                </button>
+                <button className="text-xs text-black font-light h-5 w-22 bg-pink-50 rounded-sm border border-zinc-200 mx-3 my-2">
+                  19.0K enrolled
+                </button>
+                <p className="text-sm text-black font-semibold my-3">
+                  How Does the Stock Market Work?
+                </p>
+                <p className="text-xs text-zinc-400 my-2">
+                  Demystify the mechanics of the market! Learn how the stock
+                  market operates in India, from choosing a broker to order
+                  placement and analysis.
+                </p>
+              </div>
+
+              <div className="h-80 w-120 cursor-pointer">
+                <img
+                  src={btn2}
+                  alt="background"
+                  className="rounded-md w-full h-fit"
+                />
+                <button className="text-xs text-black font-light h-5 w-22 bg-green-50 rounded-sm border border-zinc-200 my-3">
+                  Advanced
+                </button>
+                <button className="text-xs text-black font-light h-5 w-22 bg-purple-50 rounded-sm border border-zinc-200 mx-3 my-2">
+                  9,230 enrolled
+                </button>
+                <p className="text-sm text-black font-semibold my-3">
+                  How To Start Investing in the Stock Market?
+                </p>
+                <p className="text-xs text-zinc-400 my-2">
+                  This module guides you on how to start investing in the stock
+                  market in India. Understand the entire process - from setting
+                  goals to choosing your investments and executing orders.
+                </p>
+              </div>
+
+              <div className="h-80 w-120">
+                <img
+                  src={btn3}
+                  alt="background"
+                  className="rounded-md w-full h-fit"
+                />
+                <button className="text-xs text-black font-light h-5 w-22 bg-green-50 rounded-sm border border-zinc-200 my-3">
+                  Beginner
+                </button>
+                <button className="text-xs text-black font-light h-5 w-22 bg-purple-50 rounded-sm border border-zinc-200 mx-3 my-2">
+                  57.5K enrolled
+                </button>
+                <p className="text-sm text-black font-semibold my-3">
+                  Why To Invest in The Stock Market?
+                </p>
+                <p className="text-xs text-zinc-400 my-2">
+                  Understand how investing in the Indian stock market offers
+                  opportunities for financial growth and wealth creation. Learn
+                  how to invest in the Indian stock market and understand the
+                  basics of the market.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-9 bg-white w-full h-120 rounded-xl px-5 py-5">
+            <h1 className="text-black font-semibold text-sm">
+              Angel One Learning Center
+            </h1>
+            <p className="text-sm text-zinc-600 ">
+              Become a better investor with personalised lessons for your skill
+              level LEARN MORE
+            </p>
+            <video
+              width="660"
+              height="380"
+              controls
+              loop
+              className="rounded-lg shadow-lg my-5"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=B5mCr2lZpqw&pp=ygUSYW5nZWwgb25lIHRyYWluaW5n0gcJCfwJAYcqIYzv"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          <div className="content-10 bg-white w-full h-60 rounded-xl my-3  px-5 py-5  ">
+            <h1 className="text-black font-semibold text-sm">
+              External Services
+            </h1>
+            <div className="flex space-x-2 my-5">
+              <div className=" h-32 w-130 bg-white border border-zinc-200 rounded-xl px-5 py-3 my-2 cursor-pointer shadow-red-600 hover:bg-blue-50   hover:shadow-blue-500/50 hover:shadow-[0_0_15px_3px_rgba(0,0,0,0.7)] transition ">
+                <img
+                  src={small}
+                  alt="logo"
+                  className=" bg-blue-50 rounded-full h-10 w-10 hover:bg-white"
+                />
+                <h1 className="text-sm font-semibold text-black mt-2">
+                  Smallcase
+                </h1>
+                <p className="text-sm font-semibold text-zinc-400">
+                  Invest in low cost, diversified and long term portfolios,
+                  curated by experts
+                </p>
+              </div>
+
+              <div className=" h-32 w-130 bg-white border border-zinc-200 rounded-xl px-5 py-5 my-2 cursor-pointer shadow-red-600 hover:bg-blue-50   hover:shadow-blue-500/50 hover:shadow-[0_0_15px_3px_rgba(0,0,0,0.7)] transition ">
+                <img
+                  src={vested}
+                  alt="logo"
+                  className=" bg-blue-50 rounded-full h-10 w-10 hover:bg-white"
+                />
+                <h1 className="text-sm font-semibold text-black mt-2">
+                  Vested
+                </h1>
+                <p className="text-sm font-semibold text-zinc-400">
+                  Invest in US stocks like Amazon,Tesla and Meta
+                </p>
+              </div>
+
+              <div className=" h-32 w-130 bg-white border border-zinc-200 rounded-xl px-5 py-3 my-2 cursor-pointer shadow-red-600 hover:bg-blue-50   hover:shadow-blue-500/50 hover:shadow-[0_0_15px_3px_rgba(0,0,0,0.7)] transition ">
+                <img
+                  src={sensibull}
+                  alt="logo"
+                  className=" bg-blue-50 rounded-full h-10 w-10 hover:bg-white"
+                />
+                <h1 className="text-sm font-semibold text-black mt-2">
+                  Sensibull
+                </h1>
+                <p className="text-sm font-semibold text-zinc-400">
+                  Learn options trading, create your option strategies and
+                  access expert advice
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-11 bg-white w-full h-17  rounded-xl p-5 px-8 flex justify-between">
+            <h1 className="text-xl text-black font-semibold ">
+              Join Communtiy
+            </h1>
+            <div className="flex space-x-5">
+              <a
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={youtube}
+                  alt="Example Logo"
+                  className="rounded-lg hover:opacity-80 transition"
+                />
+              </a>
+
+              <a
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={instagram}
+                  alt="Example Logo"
+                  className="rounded-lg hover:opacity-80 transition"
+                />
+              </a>
+
+              <a
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={linkdin}
+                  alt="Example Logo"
+                  className="rounded-lg hover:opacity-80 transition"
+                />
+              </a>
+
+              <a
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={twiter}
+                  alt="Example Logo"
+                  className="rounded-lg hover:opacity-80 transition"
+                />
+              </a>
+
+              <a
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={facebook}
+                  alt="Example Logo"
+                  className="rounded-lg hover:opacity-80 transition"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </main>
     </>
