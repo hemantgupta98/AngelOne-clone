@@ -1,4 +1,5 @@
 import "./App.css";
+import Account from "./Main/Account";
 
 /*import img22 from "../src/assets/Image/img22.svg";
 import img23 from "../src/assets/Image/img23.svg";
@@ -8,14 +9,13 @@ import img29 from "../src/assets/Image/img29.svg";
 import img33 from "../src/assets/Image/img33.svg";
 import Register from "./Main/Register";
 import Login from "./Main/Login";*/
-import HomePage from "./Main/Homepage";
 
 function App() {
   return (
     <>
       {/* <Register images={[img28, img29, img33]} width={400} height={300} />
       <Login images={[img22, img23, img25]} width={400} height={300} />*/}
-      <HomePage />
+      <Account />
     </>
   );
 }
