@@ -31,8 +31,17 @@ const DemantAccount = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log(data);
+    if (data.example.length === 10) {
+      alert("Thanks for register!");
+      reset();
+    } else {
+      alert("Please enter a valid 10-digit phone number!");
+    }
+  };
 
   return (
     <>
@@ -356,11 +365,12 @@ const DemantAccount = () => {
                   <input
                     {...register("example", {
                       required: "Please enter your phone number",
+                      minLength: { value: 10, message: "Must be 10 digits" },
+                      maxLength: { value: 10, message: "Must be 10 digits" },
                     })}
                     className=" bg-white rounded-md border border-blue-200 mt-5 px-5 h-10 w-full"
                     placeholder="+91   Enter your number.."
                     maxLength={10}
-                    minLength={10}
                   />
 
                   {errors.example && (
