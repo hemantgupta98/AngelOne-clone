@@ -41,7 +41,7 @@ const Login = () => {
     <>
       <main>
         <div className="login ">
-          <div className="login-section h-1500 w-full  bg-zinc-100">
+          <div className="login-section h-1500 w-full bg-zinc-100 ">
             {/*heading*/}
             <div className="heading h-25  w-full flex bg-white gap-5 justify-center ">
               <img src={img2} alt="logo" className=" relative h-25 w-50 " />
@@ -71,12 +71,12 @@ const Login = () => {
               </button>
             </div>
 
-            <div className="heading-last h-13 w-full flex  justify-center  bg-blue-100">
+            <div className="heading-last h-13 w-full flex  justify-center bg-blue-100  ">
               <div className="font  hidden">
                 <FontAwesomeIcon icon={faListUl} />
               </div>
 
-              <ul className="list flex gap-10 text-xl pt-2 cursor-pointer font-extralight ">
+              <ul className="list flex gap-10 text-xl pt-2 cursor-pointer font-semibold ">
                 <li>Trade & Invest</li>
                 <li>Mutual Funds & SIP</li>
                 <li>Learn</li>
@@ -144,15 +144,15 @@ const Login = () => {
             </div>
 
             {/*login-2 */}
-            <div className="login-section-2 h-120 w-full mt-10 bg-white">
+            <div className="login-section-2 h-120 w-full mt-10 ">
               <h1 className="text-zinc-600  text-5xl font-bold flex  justify-center pt-10">
                 {" "}
                 <span>
-                  <img src={img17} alt="" />
+                  <img src={img17} alt="" className="hidden" />
                 </span>{" "}
                 Transparent pricing. No hidden charges{" "}
                 <span>
-                  <img src={img17} alt="" />
+                  <img src={img17} alt="" className="hidden" />
                 </span>
               </h1>
               <div className="container mx-auto flex justify-center gap-10 pt-10">
@@ -234,7 +234,7 @@ const Login = () => {
             </div>
 
             {/*login-3*/}
-            <div className="login-section-3 h-170 flex justify-around pt-20">
+            <div className="login-section-3 h-170 flex justify-around pt-20 bg-transparent">
               <div className="container-1">
                 <img
                   src={img4}
@@ -290,7 +290,7 @@ const Login = () => {
             </div>
 
             {/*login-4 */}
-            <div className="login-section-4 flex justify-around h-170 w-full bg-white pt-30">
+            <div className="login-section-4 flex justify-around h-170 w-full  pt-30">
               <div className="container-2">
                 <h1 className=" text-zinc-700 text-5xl font-bold ">
                   BUILT FOR <br /> TRADERS
@@ -341,7 +341,7 @@ const Login = () => {
             </div>
 
             {/*login-5 */}
-            <div className="login-section-5 h-180 w-full bg-zinc-100 ">
+            <div className="login-section-5 h-180 w-full  ">
               <h1 className=" text-zinc-700 font-bold text-5xl text-center pt-20">
                 PICK YOUR PREFERD INVESTMENT
               </h1>
@@ -410,7 +410,7 @@ const Login = () => {
             </div>
 
             {/*login-6 */}
-            <div className="login-section-6 h-190 w-full bg-white flex justify-evenly pt-20 pl-20 ">
+            <div className="login-section-6 h-190 w-full  flex justify-evenly pt-20 pl-20 ">
               <div className="section-1 ">
                 <h1 className=" text-zinc-700 text-5xl font-bold ">
                   LEARN TO EARN WITH <br /> ANGEL ONE
@@ -473,8 +473,8 @@ const Login = () => {
             </div>
 
             {/*login-7 */}
-            <div className="login-section-7 h-110 w-full pt-15 pl-40 pr-40">
-              <div className="section-container h-80 w-full bg-white rounded-md border-1 border-zinc-200 flex justify-between pt-5">
+            <div className="login-section-7 h-110 w-full pt-15 pl-40 pr-40 ">
+              <div className="section-container h-80 w-full  rounded-md border-1 border-zinc-200 flex justify-between pt-5 bg-gray-100">
                 <div className="text p-15">
                   <h1 className=" text-black font-semibold text-3xl">
                     Calculate Brokerage & Margin easily
@@ -522,12 +522,12 @@ const Login = () => {
             </div>
 
             {/*login-8 */}
-            <div className="login-section-8 h-550 w-full bg-white ">
+            <div className="login-section-8 h-560 w-full  ">
               <p className=" text-black font-semibold  text-2xl text-center pt-10">
                 Top 20 Stocks
               </p>
               {/*columns */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pl-40 pr-40 pt-10 text-center text-blue-600 font-semibold  ">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pl-40 pr-40 pt-10 text-center text-blue-600 font-semibold  bg-white">
                 <div className=" border-1 border-zinc-400 rounded-tl-2xl hover:border-blue-500 pt-12 h-30 ">
                   <span className="cursor-pointer hover:text-blue-900">
                     IRFA share price
@@ -633,11 +633,11 @@ const Login = () => {
               <div className="bottom-text   ">
                 <ul className=" flex justify-center pt-20 text-5xl font-semibold">
                   <li>
-                    <img src={img17} alt="logo" className=" pt-5" />
+                    <img src={img17} alt="logo" className="hidden pt-5" />
                   </li>
                   <li>Angel One for every One</li>
                   <li>
-                    <img src={img17} alt="logo" className=" pt-5" />
+                    <img src={img17} alt="logo" className="hidden pt-5" />
                   </li>
                 </ul>
                 <p className=" text-center text-3xl font-bold">

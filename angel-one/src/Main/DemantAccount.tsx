@@ -1,7 +1,10 @@
 import React from "react";
 import img2 from "../assets/Image/img2.webp";
+import img36 from "../assets/Image/img36.webp";
+import scr2 from "../assets/Image/scr2.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import {
   NavigationMenu,
@@ -16,11 +19,25 @@ import {
 
 import LiquidEther from "../components/ui/Background";
 
+import { useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
+
+type Inputs = {
+  example: string;
+};
+
 const DemantAccount = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+
   return (
     <>
       <div
-        style={{ width: "100%", height: 1000, position: "absolute" }}
+        style={{ width: "100%", height: 3000, position: "absolute" }}
         className="bg-blue-50"
       >
         <LiquidEther
@@ -299,6 +316,76 @@ const DemantAccount = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+          </div>
+
+          <div className="px-30 py-5 ">
+            <p className="text-zinc-400 text-xs">
+              <span className="text-blue-300 hover:text-blue-600">Home</span>{" "}
+              <FontAwesomeIcon icon={faAngleRight} /> Open Demate Account{" "}
+            </p>
+            <h1 className="text-4xl text-black font-semibold py-5">
+              Open Free Demat Account
+            </h1>
+            <div className=" px-10 my-5 flex gap-10">
+              <div className="flex gap-10">
+                <img src={img36} alt="logo" className="h-110 w-90" />
+                <div className="space-y-5 mt-20">
+                  <h1 className="text-black text-2xl ">
+                    <span className="text-orange-400 text-5xl">₹0</span> ₹0
+                    brokerage for first 30 days*
+                  </h1>
+                  <h1 className="text-black text-2xl">
+                    <span className="text-orange-400 text-5xl">₹0</span>₹0
+                    account maintenance charges for first year
+                  </h1>
+                  <h1 className="text-black text-2xl ">
+                    <span className="text-orange-400 text-5xl">₹0</span>
+                    ₹0 commission on Mutual Funds
+                  </h1>
+                </div>
+              </div>
+              <div className="h-120 w-90 bg-white rounded-md ">
+                <h1 className=" font-semibold text-xl px-5 py-5">
+                  Open Free Demat Account!
+                </h1>
+                <p className="text-zinc-500 font-light px-5 py-5">
+                  Join our 3 Cr+ happy customers
+                </p>
+                <img src={scr2} alt="" />
+                <form onSubmit={handleSubmit(onSubmit)} className="px-5">
+                  <input
+                    {...register("example", {
+                      required: "Please enter your phone number",
+                    })}
+                    className=" bg-white rounded-md border border-blue-200 mt-5 px-5 h-10 w-full"
+                    placeholder="+91   Enter your number.."
+                    maxLength={10}
+                    minLength={10}
+                  />
+
+                  {errors.example && (
+                    <span className="text-red-500 pt-5">
+                      {errors.example?.message}
+                    </span>
+                  )}
+
+                  <button
+                    type="submit"
+                    className="bg-blue-500 text-white rounded-md border-none font-semibold text-center mt-5 w-full h-10 cursor-pointer"
+                  >
+                    Get Free demate Account
+                  </button>
+                  <p
+                    className="text-center text-blue-600 font-semibold text-xs mt-10 cursor-pointer"
+                    onClick={() => {
+                      alert("Not in service");
+                    }}
+                  >
+                    Want to open an NRI account?
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
