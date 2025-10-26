@@ -1,7 +1,6 @@
 import React from "react";
 
 import img24 from "../assets/Image/img24.svg";
-import { Checkbox } from "@/components/ui/checkbox";
 import { useForm, type SubmitHandler } from "react-hook-form";
 
 type Props = {
@@ -145,7 +144,6 @@ const Login = ({
                 htmlFor=""
                 className="text-black font-semibold text-md mt-20"
               >
-                <Checkbox className=" rounded-full mx-1" disabled />
                 Login with client ID
               </label>
             </div>

@@ -1,6 +1,5 @@
 import "./App.css";
-import Account from "./Main/Account";
-
+import DemantAccount from "./Main/DemantAccount";
 /*import img22 from "../src/assets/Image/img22.svg";
 import img23 from "../src/assets/Image/img23.svg";
 import img25 from "../src/assets/Image/img25.svg";
@@ -15,7 +14,7 @@ function App() {
     <>
       {/* <Register images={[img28, img29, img33]} width={400} height={300} />
       <Login images={[img22, img23, img25]} width={400} height={300} />*/}
-      <Account />
+      <DemantAccount />
     </>
   );
 }

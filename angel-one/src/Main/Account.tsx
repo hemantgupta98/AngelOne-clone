@@ -8,7 +8,7 @@ import twiter from "../assets/Image/twitter.svg";
 import linkdin from "../assets/Image/linkedin.svg";
 import youtube from "../assets/Image/youtube.svg";
 
-import LiquidEther from "@/components/ui/LiquidEther";
+/*import LiquidEther from "@/components/ui/LiquidEther";*/
 import {
   BanknoteArrowDown,
   ChevronRight,
