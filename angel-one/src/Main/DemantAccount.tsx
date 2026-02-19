@@ -17,7 +17,7 @@ import {
   /*NavigationMenuViewport,*/
 } from "@/components/ui/Navigation";
 
-import LiquidEther from "../components/ui/Background";
+/*import LiquidEther from "../components/ui/Background";*/
 
 import { useForm } from "react-hook-form";
 import type { SubmitHandler } from "react-hook-form";
@@ -49,7 +49,7 @@ const DemantAccount = () => {
         style={{ width: "100%", height: 3000, position: "absolute" }}
         className="bg-blue-50"
       >
-        <LiquidEther
+        {/**<LiquidEther
           colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
           mouseForce={20}
           cursorSize={100}
@@ -65,7 +65,7 @@ const DemantAccount = () => {
           takeoverDuration={0.25}
           autoResumeDelay={3000}
           autoRampDuration={0.6}
-        />
+        /> */}
       </div>
       <div className="relative z-10 flex flex-col min-h-screen text-black">
         <div>
